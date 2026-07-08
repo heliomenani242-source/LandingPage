@@ -11,7 +11,7 @@ if (navToggle && navList) {
 
 const WHATSAPP_NUMBER = '5544997670805';
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
-const WHATSAPP_BUBBLE_MESSAGE = '👋 Olá! Podemos ajudar?';
+const WHATSAPP_BUBBLE_MESSAGE = '👋 Olá! Como posso ajudar?';
 const BUBBLE_DELAY_MS = 5000;
 const BUBBLE_SHOW_MS = 10000;
 
