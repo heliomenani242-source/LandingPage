@@ -65,7 +65,7 @@ img {
     gap: 2rem;
 }
 
-..skill-grid,
+.skill-grid,
 .project-grid {
     display: grid;
     gap: 1.25rem;
@@ -364,10 +364,21 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .hero__content {
+        grid-template-areas:
+            "hero-photo"
+            "hero-text";
+    }
+
     .hero__photo-wrapper {
+        grid-area: hero-photo;
         margin-top: 0;
         max-width: 320px;
         width: 100%;
+    }
+
+    .hero__text {
+        grid-area: hero-text;
     }
 
     .hero__lead,
@@ -379,12 +390,19 @@ img {
 
 @media (max-width: 720px) {
     .hero__content {
+        grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
     .hero__photo-wrapper {
+        order: 1;
         max-width: 280px;
     }
+
+    .hero__text {
+        order: 2;
+    }
+
 
     .hero__actions {
         flex-direction: column;
@@ -439,22 +457,6 @@ img {
     }
 }
 
-
-.section,
-.footer {
-    padding: 2rem 0;
-}
-
-.hero__photo {
-    border-radius: 24px;
-}
-
-.footer__content {
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 .nav__list {
     width: 100%;
-}
 }
